@@ -1,7 +1,10 @@
 # human-pose-estimation-opencv
 Perform Human Pose Estimation in OpenCV Using OpenPose MobileNet
 
-![OpenCV Using OpenPose MobileNet](output.JPG)
+<p float="left">
+  <img src="Photo5623.jpg" alt="Initial photo" width="45%" />
+  <img src="Photo5623_fit.jpg" alt="OpenCV Using OpenPose MobileNet" width="45%" />
+</p>
 
 
 # How to use
