@@ -32,11 +32,12 @@ headerTemplate.innerHTML = `
     }
   </style>
   <header>
+        <img src="../ff.png" alt="Modegen.ai Logo">
         <h1>Modegen.ai</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="team.html">Team</a>
+            <a href="../index.html">Home</a>
+            <a href="../contact.html">Contact</a>
+            <a href="../team.html">Team</a>
         </nav>
   </header>
 `;
