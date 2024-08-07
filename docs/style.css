@@ -94,4 +94,25 @@
             background-color: rgba(255, 255, 255, 0.5); /* White overlay with 50% transparency */
             z-index: -1; /* Ensure the overlay is behind the content */
         }
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #1a1a40;
+            font-size: 24px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #0077b5; /* LinkedIn blue */
+            transform: scale(1.2);
+        }
+
+        .social-icons a:nth-child(1):hover {
+            color: #1da1f2; /* Twitter blue */
+        }
     </style>

@@ -43,8 +43,8 @@ headerTemplate.innerHTML = `
   <header>
         <nav>
             <a href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
             <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
         </nav>
   </header>
 `;
