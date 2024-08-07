@@ -2,53 +2,50 @@ const footerTemplate = document.createElement('template');
 
 footerTemplate.innerHTML = `
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
     footer {
       height: 60px;
-      padding: 0 10px;
-      list-style: none;
       display: flex;
-      flex-shrink: 0;
-      justify-content: space-between;
       align-items: center;
-      background-color: #dfdfe2;
+      justify-content: center;
+      background-color: rgba(214, 74, 67, 1);
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+      color: #f0f0f0;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
     }
 
-    ul {
+    footer ul {
       padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
     }
 
-    ul li {
+    footer ul li {
       list-style: none;
-      display: inline;
     }
 
-    a {
-      margin: 0 15px;
-      color: inherit;
+    footer a {
+      font-weight: 700;
+      font-size: 16px;
+      padding: 10px 20px;
+      color: #f0f0f0;
       text-decoration: none;
+      transition: color 0.3s, background-color 0.3s;
     }
 
-    a:hover {
-      padding-bottom: 5px;
-      box-shadow: inset 0 -2px 0 0 #333;
+    footer a:hover {
+      color: #1a1a40;
+      background-color: #f0f0f0;
+      border-radius: 5px;
     }
+</style>
 
-    .social-row {
-      font-size: 20px;
-    }
-
-    .social-row li a {
-      margin: 0 15px;
-    }
-  </style>
   <footer>
     <ul>
       &copy; 2024 Modegen.ai. All rights reserved.
-    </ul>
-    <ul class="social-row">
-      <li><a href="https://github.com/my-github-profile"><i class="fab fa-github"></i></a></li>
-      <li><a href="https://twitter.com/my-twitter-profile"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/my-linkedin-profile"><i class="fab fa-linkedin"></i></a></li>
     </ul>
   </footer>
 `;

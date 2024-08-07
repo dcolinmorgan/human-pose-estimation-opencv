@@ -1,43 +1,50 @@
 const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
-  <style>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
     nav {
-      height: 40px;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color:  #0a0a23;
+      background-color: rgba(214, 74, 67, 1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     ul {
       padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
     }
 
     ul li {
       list-style: none;
-      display: inline;
     }
 
     a {
+      font-family: 'Roboto', sans-serif;
       font-weight: 700;
-      margin: 0 25px;
-      color: #fff;
+      font-size: 16px;
+      padding: 10px 20px;
+      color: #f0f0f0;
       text-decoration: none;
+      transition: color 0.3s, background-color 0.3s;
     }
 
     a:hover {
-      padding-bottom: 5px;
-      box-shadow: inset 0 -2px 0 0 #fff;
+      color: #1a1a40;
+      background-color: #f0f0f0;
+      border-radius: 5px;
     }
-  </style>
+</style>
   <header>
-        <img src="../ff.png" alt="Modegen.ai Logo">
-        <h1>Modegen.ai</h1>
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="../contact.html">Contact</a>
-            <a href="../team.html">Team</a>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="team.html">Team</a>
         </nav>
   </header>
 `;
